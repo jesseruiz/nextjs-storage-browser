@@ -7,5 +7,12 @@ import { storage } from "./storage/resource";
  */
 defineBackend({
   auth,
-  storage,
+});
+
+
+backend.addOutput({
+  storage: {
+    aws_region: "us-east-1",
+    bucket_name: "kiosktm-org-uploader "
+  },
 });
